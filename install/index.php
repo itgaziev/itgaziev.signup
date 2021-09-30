@@ -60,6 +60,7 @@ class ITGaziev_SIGNUP extends CModule {
 
     function InstallFiles() {
         CopyDirFiles(__DIR__ . '/components', $_SERVER['DOCUMENT_ROOT'] . '/bitrix/components', true, true);
+        CopyDirFiles(__DIR__ . '/templates', $_SERVER['DOCUMENT_ROOT'] . '/bitrix/templates', true, true);
         CopyDirFiles(__DIR__ . '/site', $_SERVER['DOCUMENT_ROOT'] . '/', true, true);
     }
 
